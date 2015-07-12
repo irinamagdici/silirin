@@ -5,7 +5,7 @@
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
- * different template.
+ * different templat
  *
  * @package SKT White
  */
@@ -13,7 +13,7 @@
 get_header(); 
 ?>
 
-<?php if ( 'page' == get_option( 'show_on_front' ) && ( '' != get_option( 'page_for_posts' ) ) && $wp_query->get_queried_object_id() == get_option( 'page_for_posts' ) ) : ?>
+<!--<?php if ( 'page' == get_option( 'show_on_front' ) && ( '' != get_option( 'page_for_posts' ) ) && $wp_query->get_queried_object_id() == get_option( 'page_for_posts' ) ) : ?>
 
     <div class="content-area">
         <div class="middle-align content_sidebar">
@@ -47,6 +47,7 @@ get_header();
 
 
 <?php else: ?>
+-->
 
 	<?php
 		$section_text = array(

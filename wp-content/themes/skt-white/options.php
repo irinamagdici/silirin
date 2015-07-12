@@ -866,7 +866,7 @@ function optionsframework_options() {
 		'name' => __('Slider Title', 'skt-white'),
 		'id' => 'header_title',
 		'std' => '<h1>SKT White</h1>
-				 <p>Aliquam vitae nunc nibh. Nam sollicitudin orci vel eros vulputate vestibulum.</p><br/>
+				 <p>aaa</p><br/>
 				 <a href="#">Contact Us</a>',
 		'type' => 'editor');
 

@@ -20,7 +20,7 @@
 
 <?php if ( (of_get_option('innerpageslider', true) != 'hide') || is_home() || is_front_page() ) { ?>
 	<div class="slider-main">
-    <?php $slide_title = '<h1>SKT White</h1><p>Aliquam vitae nunc nibh. Nam sollicitudin orci vel eros vulputate vestibulum.</p><a href="#">Contact Us</a>'; ?>
+    <?php $slide_title = '<h1>>>> NE CASATORIM <<<</h1><hr/><br/><h2>SILVIU  SI  IRINA</h2><br/><h3><span class=grey>Casatoria Religioasa:</span> Sambata, 3 octombrie 2015, orele 17:00 <br/> la Catedrala Romano-Catolica din Iasi "Sfanta Maria Regina"</h3><br/><h3><span class=grey>Petrecerea:</span> Restaurant IDEO Pacurari, incepand cu orele 20:00</h3>'; ?>
             <div class="top-bar">
                 <?php echo of_get_option( 'header_title', $slide_title ); ?>
             </div><!-- top-bar -->
@@ -33,19 +33,16 @@
 					'slide_image' => get_template_directory_uri()."/images/slides/slider1.jpg",
 				),
 				2 => array(
-					'slide_image' => get_template_directory_uri()."/images/slides/slider2.jpg",
+					'slide_image' => get_template_directory_uri()."/images/slides/slider6.jpg",
 				),
 				3 => array(
-					'slide_image' => get_template_directory_uri()."/images/slides/slider3.jpg",
+					'slide_image' => get_template_directory_uri()."/images/slides/slider4.jpg",
 				),
-				4 => array(
-					'slide_image' => get_template_directory_uri()."/images/slides/slider1.jpg",
-				),
-				5 => array(
-					'slide_image' => get_template_directory_uri()."/images/slides/slider2.jpg",
-				)
+                4 => array(
+                    'slide_image' => get_template_directory_uri()."/images/slides/slider7.jpg",
+                )
 			); 
-			for ($i=1; $i<6; $i++) {
+			for ($i=1; $i<5; $i++) {
 				if( of_get_option('slide'.$i,true) != '') { 
 				?>
                 	<img src="<?php echo of_get_option('slide'.$i,$default_images[$i]['slide_image']); ?>"  />
@@ -62,13 +59,13 @@
                             		<a href="<?php echo esc_url( home_url('/')); ?>">
                                     	<?php if( of_get_option( 'logo', true ) != '' ) { ; ?>
                                         	<?php if( of_get_option('logo',true) == 1 ) { ?>
-                                            	<h1><?php bloginfo('name'); ?></h1>
+                                            	<h1 style="font-family: 'roddenberrybold_italic',verdana;"><?php bloginfo('name'); ?></h1>
                                             <?php } else { ?>
  	                                       <img src="<?php echo esc_url( of_get_option( 'logo', true )); ?>" / >
                                         <?php } } else { ?>
-    	                                    <h1><?php bloginfo('name'); ?></h1>
+    	                                    <h1  style="font-family: 'roddenberrybold_italic',verdana;"><?php bloginfo('name'); ?></h1>
                                         <?php } ?>
-                                        <p><?php bloginfo('description'); ?></p>
+                                        <!-- <p><?php bloginfo('description'); ?></p> -->
                                     </a>
                              </div><!-- logo -->
                             <div class="toggle">

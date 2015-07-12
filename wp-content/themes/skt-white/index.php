@@ -20,7 +20,7 @@ get_header();
             <div class="site-main" id="sitemain">
 				<?php
                 if ( have_posts() ) :
-                    // Start the Loop.
+                    // Start the Loop
                     while ( have_posts() ) : the_post();
                         /*
                          * Include the post format-specific template for the content. If you want to
@@ -51,31 +51,31 @@ get_header();
 	<?php
 		$section_text = array(
 		1 => array(
-			'section_title'		=> 'Our Services',
+			'section_title'		=> 'Nunta noastra',
 			'menutitle'			=> 'services',
 			'bgcolor' 			=> '#ffffff',
 			'bgimage'			=> '',
 			'class'				=> 'services',
-			'content'			=> '<div id="services-box">
-				<img src="'.get_template_directory_uri().'/images/icon-web-design.png">
-				<h2>Web <span>Design</span></h2>
-				<p>Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industry standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.</p>
-				<a href="#" class="read-more">Read More</a>
-				</div><div id="services-box">
-				<img src="'.get_template_directory_uri().'/images/icon-web-design.png">
-				<h2>Web <span>Development</span></h2>
-				<p>Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industrys standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.</p>
-				<a href="#" class="read-more">Read More</a>
-				</div><div id="services-box">
-				<img src="'.get_template_directory_uri().'/images/icon-web-design.png">
-				<h2>Mobile <span>Website</span></h2>
-				<p>Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industrys standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.</p>
-				<a href="#" class="read-more">Read More</a>
-				</div><div id="services-box">
-				<img src="'.get_template_directory_uri().'/images/icon-web-design.png">
-				<h2>WordPress <span>Themes</span></h2>
-				<p>Lorem Ipsum is simply dummy text of they printing and typesetting industry. Lore Ipsum has been the industrys standard in dummy text ever since the 1500s, when an unknown printer took a galley of type andin scrambled it to make a type book.</p>
-				<a href="#" class="read-more">Read More</a>
+			'content'			=> '<div class="services-box" id="ring-box">
+				<img src="'.get_template_directory_uri().'/images/ring-icon.png">
+				<h2>Cununia Civila</h2>
+				<p>Va avea loc pe 1 august, la orele 12:00, la Starea Civila (Centru Iasi). Ne-am dorit sa aiba loc cat mai devreme pentru ca...</p>
+				<a target="_blank" title="Cununia Civila" href="/cununia-civila/" class="read-more">Detalii</a>
+				</div><div class="services-box" id="church-box">
+				<img src="'.get_template_directory_uri().'/images/church-icon.png">
+				<h2>Casatoria Religioasa</h2>
+				<p>Va avea loc pe 3 octombrie, la orele 17:00, la Catedrala Romano-Catolica din centru, "Sfanta Maria Regina" Iasi. </p>
+				<a target="_blank" title="Casatoria Religioasa" href="/casatoria-religioasa/" class="read-more">Detalii</a>
+				</div><div class="services-box" id="cake-box">
+				<img src="'.get_template_directory_uri().'/images/cake-icon.png">
+				<h2>Petrecerea</h2>
+				<p>Elegantul Restaurant IDEO din Pacurari va juca rolul de statie spatiala in lunga noastra calatorie in spa...</p>
+				<a target="_blank" title="Petrecerea" href="/petrecerea/" class="read-more">Detalii</a>
+				</div><div class="services-box" id="photo-box">
+				<img src="'.get_template_directory_uri().'/images/photo-icon.png">
+				<h2>Fotografii</h2>
+				<p>Fotografii cu noi, cu voi - Multe peripetii au fost, si multe vor mai fi. Pentru ca suntem in primul rand, explo...</p>
+				<a target="_blank" title="Fotografii" href="/fotografii/" class="read-more">Detalii</a>
 				</div>',
 			
 		),
@@ -86,10 +86,10 @@ get_header();
 			'bgcolor' 		=> '',
 			'bgimage'		=> get_template_directory_uri()."/images/contact-banner.jpg",
 			'class'			=> 'contact-banner',
-			'content'		=> '<h3>Do you like SKT White? Is it everything you wanted from a theme?</h3>
-            <a class="contact-button" href="#">Contact Us</a>',
+			'content'		=> '<h3>Vrei sa ne confirmi prezenta?</h3>
+            <a class="contact-button" href="tel:+40745827789">Sun-o pe Irina</a><a class="contact-button" href="tel:+40751427728">Suna-l pe Silviu</a><a class="contact-button" href="#">Join Event @FB</a>',
 		),
-
+/*
 		3 => array(
 			'section_title'	=> 'A message from our manager',
 			'menutitle'		=> '',
@@ -138,11 +138,11 @@ get_header();
 			'bgimage'		=> '',
 			'class'			=> 'client_banner',
 			'content'		=> '<div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/compact-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/tv-digital-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/changes-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/finance-logo.jpg"></a></div><div class="client last"><a href="#"><img src="'.get_template_directory_uri().'/images/thousand-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/finance-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/thousand-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/changes-logo.jpg"></a></div><div class="client "><a href="#"><img src="'.get_template_directory_uri().'/images/tv-digital-logo.jpg"></a></div><div class="client last"><a href="#"><img src="'.get_template_directory_uri().'/images/compact-logo.jpg"></a></div>'
-		),
+		),*/
 	);
 	
-    if( of_get_option('numsection', 7) > 0 ) { 
-        $numSections = esc_attr( of_get_option('numsection', 7) );
+    if( of_get_option('numsection', 2) > 0 ) { 
+        $numSections = esc_attr( of_get_option('numsection', 2) );
         for( $s=1; $s<=$numSections; $s++ ){ 
             $title 			= ( of_get_option('sectiontitle'.$s, true) != '' ) ? esc_html( of_get_option('sectiontitle'.$s,$section_text[$s]['section_title']) ) : '';
 			$secid			= ( of_get_option('menutitle'.$s, true) != '') ? esc_html( of_get_option('menutitle'.$s, $section_text[$s]['menutitle']) ) : '';
@@ -170,7 +170,7 @@ get_header();
     ?>
 <section class="menu_page" style="background-color:#ffffff; ">
             	<div class="container">
-                    <div class="latest-news"><h2><?php _e('Latest News','skt-white'); ?></h2>
+                    <div class="latest-news"><h2><?php _e('In ultima vreme...','skt-white'); ?></h2>
                     			 <?php $k = 0; ?>
                                  <?php global $wp_query; ?>
                                  <?php while( $wp_query->have_posts() ) : $wp_query->the_post(); ?>

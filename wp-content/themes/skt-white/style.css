@@ -19,7 +19,7 @@ SKT White WordPress Theme is released under the terms of GNU GPL
 *{ margin:0; padding:0;}
 body{ margin:0; padding:0; -ms-word-wrap:break-word; font-size:12px; word-wrap:break-word; background-color:#ffffff; line-height:20px; color:#757575; font-family:arial;}
 img{ margin:0; padding:0; border:none;}
-section img{max-width:100%;}
+section img{max-width:100%; max-height:250px;}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0;}
 p{ margin:0; padding:0;}
 a{ text-decoration:none; color:#00a8ff;}
@@ -41,8 +41,8 @@ ul{ list-style:none; margin:0; padding:0;}
 .main-container ol li{margin:5px 0;}
 .toggleMenu{display:none;}
 section{ padding:87px 0 40px; border-bottom:1px solid #e6e6e6;}
-section h2 {font-weight:700; font-size:38px; padding:0 0 50px 0; text-align:center; text-transform:uppercase; color:#404040; font-family:'Roboto Condensed',san-serif;}
-a.contact-button{ visibility:hidden; width:15%; margin:0 auto;}
+section h2 {font-weight:700; font-size:38px; padding:0 0 50px 0; text-align:center; text-transform:uppercase; color:#1c5e8c; font-family:'Roboto Condensed',san-serif;}
+a.contact-button{ font-family: 'roddenberryregular',verdana !important;visibility:hidden; width:15%; margin:0 auto; margin-left:15px;margin-right:15px;}
 
 #slider{ width:100%; margin:0; padding:0; position:relative;}
 .top-bar{ margin:0; padding:16px 0 20px; position:absolute; width:100%; top:120px; text-align:center; font-family:'Roboto'san-serif; color:#ffffff; z-index:99;}
@@ -138,14 +138,32 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 
 /* --------- Homepage --------- */
 .services { width:100%; margin:0 auto; position:relative; visibility:hidden;}
-#services-box { width:19.8%; height:auto; display:inline-block; float:left; margin:0 1px 0 0; padding:2.4%; position:relative; transition:0.3s; background-color:#ffffff; border:1px solid #f5f3f3;}
-#services-box img { display: block; margin:auto;}
-#services-box h2 { color:#404040; font-family:"Roboto",sans-serif; font-weight:300 !important; font-size:26px; text-transform:capitalize; text-align:center; padding:20px 0;}
-#services-box h2 span { font-weight:bold;}
-#services-box p { line-height:20px;}
-#services-box .read-more { color:#404040; font:300 14px 'Roboto', sans-serif; text-transform:uppercase; text-align:center; border:#fff solid 1px; padding:8px 10px; display:block; margin:30px auto 0 auto; width:50%;  background-color:#f7f6f6;}
-#services-box:hover .read-more { background:#fff; color:#3a3c41;}
-#services-box:hover {cursor:pointer; color:#404040; background-color:#f7f6f6;}
+.services-box { width:19.8%; height:auto; display:inline-block; float:left; margin:0 1px 0 0; padding:2.4%; position:relative; transition:0.3s; background-color:#ffffff; border:1px solid #f5f3f3;}
+.services-box img { display: block; margin:auto;}
+.services-box h2 { color:#1c5e8c; font-family:"Roboto",sans-serif; font-weight:300 !important; font-size:26px; text-transform:capitalize; text-align:center; padding:20px 0;}
+.services-box h2 span { font-weight:bold;}
+.services-box p { line-height:20px;}
+.services-box .read-more { color:#1c5e8c; font:300 14px 'Roboto', sans-serif; text-transform:uppercase; text-align:center; border:#fff solid 1px; padding:8px 10px; display:block; margin:30px auto 0 auto; width:50%;  background-color:#f7f6f6;}
+/*
+.services-box:hover .read-more { background:#fff; color:#3a3c41;}
+.services-box:hover {cursor:pointer; color:#404040; background-color:#06ddf0;}
+*/
+#ring-box:hover .read-more { background:#b0deff; color:#3a3c41;}
+#ring-box:hover {cursor:pointer; color:#404040; background-color:#06ddf0;}
+#ring-box h2 {color:#06ddf0;}
+
+#church-box:hover .read-more { background:#e9c1fa; color:#3a3c41;}
+#church-box:hover {cursor:pointer; color:#404040; background-color:#c24bf4;}
+#church-box h2 {color:#c24bf4;}
+
+#cake-box:hover .read-more { background:#f4bbd4; color:#3a3c41;}
+#cake-box:hover {cursor:pointer; color:#404040; background-color:#fc5aa2;}
+#cake-box h2 {color:#fc5aa2;}
+
+#photo-box:hover .read-more { background:#feeb9f; color:#3a3c41;}
+#photo-box:hover {cursor:pointer; color:#404040; background-color:#f9d441;}
+#photo-box h2 {color:#f9d441;}
+
 /*------------------------------------------- SERVICES END -------------------------------------------*/
 
 .contact-banner { text-align:center;}
@@ -205,8 +223,10 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 /*------------------------------------------- NEWSLETTER END -------------------------------------------*/
 
 /* --------------------------- SOCIAL ICONS --------------------*/
-.social-icons{ margin:0; padding:0; text-align:center;}
+.social-icons{ height:90px; margin:0; padding:0; text-align:center;}
 .icon{ width:58px; height:58px; border-radius:30px; -moz-border-radius:30px; -o-border-radius:30px; -webkit-border-radius:30px; display:inline-block; margin:0 7px 7px; background-repeat: no-repeat; background-position:center center; transition:0.6s; -moz-transition:0.6s; -webkit-transition:0.6s; -o-transition:0.6s; background-color:#302f2f;}
+/*@iri*/
+.skype{background-image:url(images/social-icons/skype-icon.png);}
 .facebook{background-image:url(images/social-icons/fb-icon.png);}
 .twitt{background-image:url(images/social-icons/twitt-icon.png);}
 .gplus{background-image:url(images/social-icons/gplus-icon.png);}
@@ -331,7 +351,7 @@ nav.post-navigation{padding:10px 0 20px;}
 .comment-list ul, ol.comment-list ul{list-style:none;}
 .comment-list li.comment{margin-top:20px;}
 .comment-list .comment-content h1, .comment-list .comment-content h2, .comment-list .comment-content h3, .comment-list .comment-content h4, .comment-list .comment-content h5, .comment-list .comment-content h6{margin-top:15px;}
-h3.widget-title{ font-size:18px; border-bottom:1px solid #cccccc; padding-bottom:15px; margin-bottom:15px;}
+h3.widget-title{font-size:18px; border-bottom:1px solid #cccccc; padding-bottom:15px; margin-bottom:15px;}
 .our-projects img{ width:24%; margin:0; padding:0; float:left; margin:0 1.3% 1.3% 0;}
 .our-projects a{ background-color:#000000;}
 

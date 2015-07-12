@@ -17,9 +17,9 @@
         </div><!-- postmeta -->
 		<?php 
         if (has_post_thumbnail() ){
-			echo '<div class="post-thumb">';
-            the_post_thumbnail();
-			echo '</div><br />';
+			//echo '<div class="post-thumb">';
+            //the_post_thumbnail();
+			//echo '</div><br />';
 		}
         ?>
         <?php the_content(); ?>
